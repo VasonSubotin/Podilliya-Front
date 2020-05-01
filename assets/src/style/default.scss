@@ -1,0 +1,11 @@
+.container-fluid {
+  max-width: 1152px;
+}
+
+h1 {
+  font-size: 47px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+  }
+}

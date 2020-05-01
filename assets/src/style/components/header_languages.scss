@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+
+.languages {
+  padding-right: 24px;
+
+  .item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    a {
+      font-size: 1.125rem;
+      color: $globalFillColor;
+      opacity: .6;
+    }
+
+    &.active {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+}

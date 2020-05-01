@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
+
+.header {
+  height: $globalHeaderHeight;
+  border-bottom: 2px solid rgba($globalFillColor, .15);
+}
+
+.logo {
+
+}

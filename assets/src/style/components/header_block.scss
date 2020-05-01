@@ -1,0 +1,10 @@
+@import "../variables";
+@import "../mixins";
+
+.header_block {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%), url(../img/header_block_bg.jpg) no-repeat left bottom;
+  background-size: cover;
+  color: $globalFillColor;
+}
