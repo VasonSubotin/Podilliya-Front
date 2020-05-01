@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../mixins";
+
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .prices_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: solid 1px $globalFillColor;
+    overflow: hidden;
+
+    @include _media(md) {
+      max-width: 350px;
+    }
+
+    .caption,
+    .price {
+      font-size: 1.125rem;
+      padding: 1.1875rem;
+    }
+
+    .caption {
+      flex: 1;
+    }
+
+    .price {
+      text-align: center;
+      height: 100%;
+      color: $globalStrokeColor ;
+      background: $globalFillColor;
+    }
+  }
+}

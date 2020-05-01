@@ -19,12 +19,32 @@
   }
 
   .header_nav_link {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     font-size: 1.125rem;
-    color: #ffffff;
+    color: $globalFillColor;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: $globalFillColor;
+      opacity: 0;
+      transition: $transition;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 }

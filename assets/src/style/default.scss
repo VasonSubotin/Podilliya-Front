@@ -1,11 +1,15 @@
+@import "variables";
+@import "mixins";
+
+
 .container-fluid {
   max-width: 1152px;
 }
 
 h1 {
-  font-size: 47px;
+  font-size: 34px;
 
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
+  @include _media('md') {
+    font-size: 47px;
   }
 }
