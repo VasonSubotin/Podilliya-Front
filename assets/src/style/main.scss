@@ -1,3 +1,6 @@
+// Ипорт Шрифта
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
 @import "variables";
 @import "mixins";
@@ -44,7 +47,8 @@
 // Подключение своих SCSS файлов
 @import "default";
 @import "components/header_block";
-@import "components/header";
+@import "components/page_header";
+@import "components/page_footer";
 @import "components/header_languages";
 @import "components/header_nav";
 @import "components/prices";

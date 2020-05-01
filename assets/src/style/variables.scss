@@ -5,19 +5,15 @@ $secondary: #ffffff;
 $red:     #cc2eaa;
 $green:   #2ecc71;
 $grid-gutter-width: 32px;
-$border-radius-lg: 1.875rem;
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
-);
+$border-radius: 4rem;
+$border-radius-lg: 4rem;
+$border-radius-sm: 4rem;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Montserrat", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 // Global Variables
 
 $globalFillColor: #ffffff;
 $globalStrokeColor: #000000;
+$globalPanelColor: #1c1b1b;
 $globalHeaderHeight: 90px;
 $transition: .25s;

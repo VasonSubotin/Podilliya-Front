@@ -8,8 +8,17 @@
 
 h1 {
   font-size: 34px;
+  font-weight: 800;
 
   @include _media('md') {
     font-size: 47px;
   }
+}
+
+a {
+  transition: $transition;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
 }
