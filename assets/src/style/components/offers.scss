@@ -24,13 +24,13 @@
   }
 
   .description {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamilyRoboto;
   }
 
   .more {
     position: relative;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamilyRoboto;
     font-size: 1.125rem;
     font-weight: 700;
     color: $globalStrokeColor;
