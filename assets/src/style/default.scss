@@ -22,3 +22,11 @@ a {
 .text-nowrap {
   white-space: nowrap !important;
 }
+
+.btn {
+  font-family: $fontFamilyRoboto !important;
+
+  &.btn-lg {
+    font-weight: 500;
+  }
+}

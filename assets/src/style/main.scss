@@ -1,6 +1,6 @@
 // Ипорт Шрифта
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
 @import "variables";
@@ -57,3 +57,4 @@
 @import "components/offers";
 @import "components/service";
 @import "components/sertifications";
+@import "components/about";

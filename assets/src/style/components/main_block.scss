@@ -3,6 +3,12 @@
 
 
 .main_block {
+  padding-bottom: 2.75rem;
+
+  @include _media(sm) {
+    padding-bottom: 7.8125rem;
+  }
+
   h2 {
     font-size: 1.75rem;
     font-weight: 700;
