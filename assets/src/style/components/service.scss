@@ -1,0 +1,11 @@
+@import "../variables";
+@import "../mixins";
+
+
+.service {
+  padding-top: 2.5rem;
+
+  @include _media(md) {
+    padding-top: 4rem;
+  }
+}
