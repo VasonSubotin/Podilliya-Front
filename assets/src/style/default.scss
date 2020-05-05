@@ -7,12 +7,11 @@
 }
 
 h1 {
-  font-size: 34px;
-  font-weight: 800;
+@include heading-1();
+}
 
-  @include _media('md') {
-    font-size: 47px;
-  }
+p {
+  font-family: $fontFamilyRoboto;
 }
 
 a {
