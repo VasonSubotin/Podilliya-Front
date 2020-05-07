@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../mixins";
+
+
+.contact_form_wrap {
+  input[type="submit"] {
+    height: 58px;
+  }
+}

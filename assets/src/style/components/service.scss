@@ -10,7 +10,6 @@
   }
 
   .text {
-    font-family: $fontFamilyRoboto;
     text-align: center;
 
     @include _media(md) {
@@ -21,7 +20,6 @@
   .services_list {
     display: flex;
     flex-direction: column;
-    font-family: $fontFamilyRoboto;
     padding: 24px 15px 40px;
     border-radius: 15px;
     background: $servicesListColor;

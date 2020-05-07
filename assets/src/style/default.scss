@@ -10,8 +10,13 @@ h1 {
 @include heading-1();
 }
 
-p {
-  font-family: $fontFamilyRoboto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyMontserrat;
 }
 
 a {
@@ -23,8 +28,6 @@ a {
 }
 
 .btn {
-  font-family: $fontFamilyRoboto !important;
-
   &.btn-lg {
     font-weight: 500;
   }
