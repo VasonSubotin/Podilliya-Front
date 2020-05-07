@@ -1,6 +1,9 @@
 // Импортируем jQuery
 //= ../../../node_modules/jquery/dist/jquery.js
 
+//Import floating
+//= ../../../node_modules/floating-form-labels/dist/floatingFormLabels.min.js
+
 // Импортируем Popper
 //= ../../../node_modules/popper.js/dist/umd/popper.js
 

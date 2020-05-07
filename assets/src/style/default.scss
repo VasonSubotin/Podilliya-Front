@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixins";
-
+@import "../../../node_modules/floating-form-labels/scss/floating-form-labels";
 
 .container-fluid {
   max-width: 1152px;
