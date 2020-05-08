@@ -14,8 +14,16 @@
   }
 
   .item {
+    display: block;
     padding: 80px 0;
+    color: $globalStrokeColor;
+    text-decoration: none;
     text-align: center;
+
+    &:hover {
+      color: $globalStrokeColor;
+      text-decoration: none;
+    }
 
     @include _media(xl) {
       padding: 115px 0;
