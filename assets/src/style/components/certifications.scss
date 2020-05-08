@@ -9,10 +9,6 @@
     padding-top: 6.25rem;
   }
 
-  .certifications_slider {
-
-  }
-
   .item {
     display: block;
     padding: 80px 0;
@@ -32,14 +28,14 @@
     .image {
       border-radius: 15px;
       overflow: hidden;
-      max-height: 100px;
+      height: 100px;
       -webkit-box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
       -moz-box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
       box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
       transition: $transition;
 
       @include _media(md) {
-        max-height: 160px;
+        height: 150px;
       }
 
       img {
@@ -112,5 +108,9 @@
         }
       }
     }
+  }
+
+  .btn-download {
+    color: $globalStrokeColor;
   }
 }
