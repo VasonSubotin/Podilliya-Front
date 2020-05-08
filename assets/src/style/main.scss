@@ -46,6 +46,9 @@
 @import "../../../node_modules/bootstrap/scss/_print";
 
 // Подключение своих SCSS файлов
+@import "../../../node_modules/floating-form-labels/scss/floating-form-labels";
+@import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+
 @import "default";
 @import "components/header_block";
 @import "components/main_block";
@@ -56,7 +59,7 @@
 @import "components/prices";
 @import "components/offers";
 @import "components/service";
-@import "components/sertifications";
+@import "components/certifications";
 @import "components/about";
 @import "components/footer_block";
 @import "components/row_info";

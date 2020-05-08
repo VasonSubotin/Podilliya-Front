@@ -4,6 +4,9 @@
 //Import floating
 //= ../../../node_modules/floating-form-labels/dist/floatingFormLabels.min.js
 
+// Import Owl
+//= ../../../node_modules/owl.carousel/dist/owl.carousel.js
+
 // Импортируем Popper
 //= ../../../node_modules/popper.js/dist/umd/popper.js
 
