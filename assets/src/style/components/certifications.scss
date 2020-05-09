@@ -10,119 +10,65 @@
   }
 
   .certifications_slider {
-    max-width: 350px;
     margin: 0 auto;
 
     @include _media(md) {
-      max-width: 100%;
-    }
-  }
-
-  .item {
-    display: block;
-    padding: 80px 0;
-    color: $globalStrokeColor;
-    text-decoration: none;
-    text-align: center;
-
-    &:hover {
-      color: $globalStrokeColor;
-      text-decoration: none;
-    }
-
-    @include _media(xl) {
-      padding: 115px 0;
-    }
-
-    .image {
-      border-radius: 15px;
-      overflow: hidden;
-      height: 100px;
-      -webkit-box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
-      -moz-box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
-      box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
-      transition: $transition;
-
-      @include _media(lg) {
-        height: 130px;
-      }
-
-      @include _media(xl) {
-        height: 150px;
-      }
-
-      img {
-        object-fit: cover;
-        object-position: top;
+      .owl-nav {
+        display: block !important;
       }
     }
 
-    .caption {
-      display: none;
-      padding-top: 10px;
-      font-size: 18px;
-      transition: $transition;
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
 
-      @include _media(md) {
-        padding-top: 18px;
+      &.owl-prev,
+      &.owl-next {
+        width: 46px;
+        padding: 11px 15px !important;
+        border-radius: 50%;
+        background: $globalFillColor;
+        box-shadow: $globalShadow;
+      }
+
+      &.owl-prev {
+        left: 50px;
+      }
+
+      &.owl-next {
+        right: 50px;
       }
     }
   }
 
   .owl-item {
-    &.center {
-      position: relative;
-      z-index: 3;
+    .item {
+      display: block;
+      color: $globalStrokeColor;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: $globalStrokeColor;
+        text-decoration: none;
+      }
 
       .image {
-        transform: scale(2);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: $globalShadow;
+        transition: $transition;
+
+        img {
+          object-fit: cover;
+          object-position: top;
+        }
       }
 
       .caption {
-        display: block;
-        transform: translateY(60px);
-      }
-
-      @include _media(md){
-        .image {
-          transform: scale(1.65);
-        }
-      }
-
-      @include _media(xl) {
-        .image {
-          transform: scale(2);
-        }
-
-        .caption {
-          transform: translateY(80px);
-        }
-      }
-    }
-
-    &.middle_active {
-      position: relative;
-      z-index: 2;
-
-      .image {
-        transform: scale(1.3);
-      }
-
-      @include _media(xl) {
-        .image {
-          transform: scale(1.7);
-        }
-      }
-    }
-
-    &.active:not(.middle_active):not(.center) {
-      position: relative;
-      z-index: 1;
-
-      @include _media(xl) {
-        .image {
-          transform: scale(1.37);
-        }
+        padding-top: 10px;
+        font-size: 18px;
       }
     }
   }
