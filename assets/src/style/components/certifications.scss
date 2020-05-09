@@ -9,6 +9,15 @@
     padding-top: 6.25rem;
   }
 
+  .certifications_slider {
+    max-width: 350px;
+    margin: 0 auto;
+
+    @include _media(md) {
+      max-width: 100%;
+    }
+  }
+
   .item {
     display: block;
     padding: 80px 0;
@@ -34,7 +43,11 @@
       box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.28);
       transition: $transition;
 
-      @include _media(md) {
+      @include _media(lg) {
+        height: 130px;
+      }
+
+      @include _media(xl) {
         height: 150px;
       }
 
@@ -46,9 +59,13 @@
 
     .caption {
       display: none;
-      padding-top: 18px;
+      padding-top: 10px;
       font-size: 18px;
       transition: $transition;
+
+      @include _media(md) {
+        padding-top: 18px;
+      }
     }
   }
 

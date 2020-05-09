@@ -7,14 +7,9 @@ $(document).ready(function () {
         'startPosition': 1,
         'center': true,
         'responsive': {
-            1025: {
+            768: {
                 'items': 5,
                 'startPosition': 2,
-                'stagePadding': 0,
-            },
-            768: {
-                'items': 3,
-                'startPosition': 1,
                 'stagePadding': 0,
             },
         },
