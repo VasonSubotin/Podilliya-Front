@@ -10,9 +10,11 @@
   }
 
   .certifications_slider {
-    margin: 0 auto;
+    margin: 0 -16px;
 
-    @include _media(md) {
+    @include _media(sm) {
+      margin: 0 auto;
+
       .owl-nav {
         display: block !important;
       }
@@ -21,7 +23,15 @@
     button {
       position: absolute;
       top: 50%;
+      display: none;
+      outline: none;
       transform: translateY(-50%);
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
 
       &.owl-prev,
       &.owl-next {
@@ -32,43 +42,115 @@
         box-shadow: $globalShadow;
       }
 
-      &.owl-prev {
-        left: 50px;
+      @include _media(sm) {
+        display: block;
+
+        &.owl-prev {
+          left: 12%;
+        }
+
+        &.owl-next {
+          right: 12%;
+        }
       }
 
-      &.owl-next {
-        right: 50px;
+      @include _media(lg) {
+        &.owl-prev {
+          left: 18%;
+        }
+
+        &.owl-next {
+          right: 18%;
+        }
+      }
+
+      @include _media(xl) {
+        &.owl-prev {
+          left: 20%;
+        }
+
+        &.owl-next {
+          right: 20%;
+        }
       }
     }
   }
 
   .owl-item {
+    position: relative;
+    transition: $transition;
+
     .item {
       display: block;
+      margin: 0 -35px;
       color: $globalStrokeColor;
+      background: $globalFillColor;
       text-decoration: none;
       text-align: center;
+      pointer-events: none;
 
       &:hover {
         color: $globalStrokeColor;
         text-decoration: none;
       }
 
-      .image {
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: $globalShadow;
-        transition: $transition;
+      @include _media(sm) {
+        margin: 0 -120px;
+      }
+    }
 
-        img {
-          object-fit: cover;
-          object-position: top;
-        }
+    .image {
+      padding-top: 71%;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: $globalShadow;
+      background-size: cover;
+      transition: $transition;
+
+      img {
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    .caption {
+      visibility: hidden;
+      opacity: 0;
+      padding-top: 1.125rem;
+      font-size: 1.125rem;
+      transition: $transition;
+    }
+
+    &.center {
+      z-index: 3;
+      transform: scale(1);
+
+      .item {
+        pointer-events: auto;
+      }
+
+      .image {
+
       }
 
       .caption {
-        padding-top: 10px;
-        font-size: 18px;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &.active:not(.center) {
+      z-index: 2;
+      transform: scale(.75);
+    }
+
+    &:not(.active):not(.center) {
+      z-index: 1;
+      transform: scale(.75);
+
+      @include _media(sm) {
+        opacity: .3;
+        transform: scale(.6);
       }
     }
   }

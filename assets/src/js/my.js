@@ -3,14 +3,23 @@ $(document).ready(function () {
 
   $('.owl-carousel').owlCarousel({
     'items': 1,
-    'stagePadding': 100,
+    'startPosition': 1,
+    'stagePadding': 70,
+    'center': true,
     'navText': [
-      '<img class="img-fluid" src="./img/arrow-left.svg" alt="">',
-      '<img class="img-fluid" src="./img/arrow-right.svg" alt="">',
+      '<img class="img-fluid" src="./img/arrow-left.svg" alt="Arrow left">',
+      '<img class="img-fluid" src="./img/arrow-right.svg" alt="Arrow right">',
     ],
     'responsive': {
-      768: {
-        'stagePadding': 0,
+      576: {
+        'items': 3,
+        'startPosition': 2,
+        'stagePadding': 50,
+      },
+      992: {
+        'items': 3,
+        'startPosition': 2,
+        'stagePadding': 100,
       },
     },
   });
