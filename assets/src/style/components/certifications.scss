@@ -14,16 +14,11 @@
 
     @include _media(sm) {
       margin: 0 auto;
-
-      .owl-nav {
-        display: block !important;
-      }
     }
 
     button {
       position: absolute;
       top: 50%;
-      display: none;
       outline: none;
       transform: translateY(-50%);
 
@@ -42,9 +37,7 @@
         box-shadow: $globalShadow;
       }
 
-      @include _media(sm) {
-        display: block;
-
+      @include _media(md) {
         &.owl-prev {
           left: 12%;
         }

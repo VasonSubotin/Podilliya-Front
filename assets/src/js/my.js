@@ -16,9 +16,16 @@ $(document).ready(function () {
         'startPosition': 2,
         'stagePadding': 50,
       },
+      768: {
+        'items': 3,
+        'startPosition': 2,
+        'stagePadding': 50,
+        'nav': true,
+      },
       992: {
         'items': 3,
         'startPosition': 2,
+        'nav': true,
         'stagePadding': 100,
       },
     },
