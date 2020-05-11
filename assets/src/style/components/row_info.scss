@@ -32,8 +32,20 @@
     justify-content: center;
     min-width: 100px;
     font-weight: 500;
-    color: $globalStrokeColor ;
+    color: $globalStrokeColor;
     background: $globalFillColor;
+
+    a {
+      color: $globalStrokeColor;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $globalStrokeColor;
+        text-decoration: none;
+      }
+    }
   }
 
   &.right_grow {
