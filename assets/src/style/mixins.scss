@@ -1,6 +1,7 @@
 @import "../../../node_modules/bootstrap/scss/_functions";
 @import "../../../node_modules/bootstrap/scss/_variables";
 @import "../../../node_modules/bootstrap/scss/_mixins";
+@import "variables";
 
 @mixin _media($breakpoint-value) {
   @media screen and (min-width: map_get($grid-breakpoints, $breakpoint-value)) {
@@ -9,6 +10,7 @@
 }
 
 @mixin heading-1($font-weight: 800) {
+  font-family: $fontFamilyMontserrat;
   font-size: 34px;
   font-weight: $font-weight;
 
@@ -18,6 +20,7 @@
 }
 
 @mixin heading-2($font-weight: 700) {
+  font-family: $fontFamilyMontserrat;
   font-size: 1.75rem;
   font-weight: $font-weight;
 
