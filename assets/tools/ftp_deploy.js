@@ -2,12 +2,12 @@ const FtpDeploy = require('ftp-deploy');
 const ftpDeploy = new FtpDeploy();
 
 const config = {
-  user: "prtesd@prtesd.ml",
-  password: "tesdtesd1",
-  host: "ftp.strekoza-design.kiev.ua",
+  user: "unaux_25749549",
+  password: "jzpl67qp7r7",
+  host: "ftp.unaux.com",
   port: 21,
   localRoot: __dirname + "/../build/",
-  remoteRoot: "/",
+  remoteRoot: "/htdocs/",
   include: ["*", "**/*"],
   exclude: ["**/*.map", "node_modules/**", "node_modules/**/.*", ".git/**"],
   deleteRemote: true,
