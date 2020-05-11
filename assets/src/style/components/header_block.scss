@@ -11,4 +11,14 @@
   @include _media(md) {
     padding-bottom: 4.625rem;
   }
+
+  .page_offers & {
+    background: $bgGradient, url(../img/footer_block.jpg) no-repeat top;
+    background-size: cover;
+    padding-bottom: 1.75rem;
+
+    @include _media(md) {
+      padding-bottom: 2.75rem;
+    }
+  }
 }
