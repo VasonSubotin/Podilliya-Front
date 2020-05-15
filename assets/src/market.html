@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+    <title>Market page</title>
+</head>
+<body class="page_market">
+
+<!--Header block for market -->
+
+<div class="header_block">
+    <div class="container-fluid">
+
+        //= ./template/components/header.html
+
+        <div class="row">
+            <div class="col-12 col-md-7 mt-4">
+                <h1>Sunflower market</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <span>Check price for sunflower in realtime</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Main block for market -->
+
+<div class="main_block">
+    <div class="container-fluid">
+        <div class="row flex-md-row-reverse">
+            <div class="col-12 col-md-3">
+                //= ./template/components/market_prices.html
+            </div>
+            <div class="col-12 col-md-9">
+                //= ./template/components/market_table.html
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer_block.html
+//= template/footer.html
+
+<!--Modals-->
+
+//= template/modals.html
+
+</body>
+</html>

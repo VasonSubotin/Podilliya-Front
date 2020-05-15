@@ -1,0 +1,64 @@
+@import "../variables";
+@import "../mixins";
+
+
+.page_market {
+  h2.title {
+    @include heading-3;
+
+    margin-bottom: 1rem;
+  }
+}
+
+.market_prices {
+  margin-bottom: 70px;
+
+  .table {
+    margin-bottom: 0;
+    padding: 0 1rem;
+    border: 1px solid $lightGray;
+    border-radius: $globalBorderRadius;
+  }
+
+  .table_row {
+    padding: 1rem 0 .75rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid $lightGray;
+    }
+  }
+
+  .label {
+    margin-bottom: .25rem;
+    font-size: .875rem;
+    color: $lightGray;
+  }
+
+  .price_row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .precent {
+    padding-left: 1rem;
+
+    &.increase {
+      color: $green;
+    }
+
+    &.decrease {
+      color: $red;
+    }
+  }
+
+  @include _media(md) {
+    margin-bottom: 0;
+  }
+}
+
+.market_table {
+  .table_wrap {
+    overflow-x: auto;
+  }
+}

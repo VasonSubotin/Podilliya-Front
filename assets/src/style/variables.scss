@@ -14,6 +14,8 @@ $fontFamilyMontserrat: "Montserrat", sans-serif;
 $font-size-lg: 1.125rem;
 $gray-400: mix(#000000, #ffffff, 25%);
 $yiq-text-dark: #000000;
+$green: #6dd400;
+$red: #e02020;
 
 // Global Variables
 
@@ -26,11 +28,14 @@ $bgGradient: linear-gradient(90deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .2) 100%);
 $globalShadow: 0 9px 16px 0 rgba($globalStrokeColor, 0.11);
 $transition: .25s;
 
+// Colors
+$lightGray: #979797;
+
 // Service
 $servicesListColor: #191919;
 
 // Divider
-$dividerBg: mix(#979797, $globalPanelColor, 30%);
+$dividerBg: mix($lightGray, $globalPanelColor, 30%);
 
 // Modals
 $modalCloseBg: mix(#504f4f, #d8d8d8, 85%);

@@ -21,6 +21,14 @@
     }
   }
 
+  .page_market & {
+    padding: 30px 0 40px;
+
+    @include _media(md) {
+      padding: 40px 0 70px;
+    }
+  }
+
   h2 {
     &:not(.title) {
       @include heading-2();
