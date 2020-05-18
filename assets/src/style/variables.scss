@@ -16,6 +16,8 @@ $gray-400: mix(#000000, #ffffff, 25%);
 $yiq-text-dark: #000000;
 $green: #6dd400;
 $red: #e02020;
+$table-dark-bg: #1c1b1b;
+$border-color: #bebebe;
 
 // Global Variables
 
@@ -39,3 +41,6 @@ $dividerBg: mix($lightGray, $globalPanelColor, 30%);
 
 // Modals
 $modalCloseBg: mix(#504f4f, #d8d8d8, 85%);
+
+// Buttons
+$btnSellColor: #1c1b1b;
