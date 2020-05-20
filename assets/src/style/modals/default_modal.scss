@@ -13,6 +13,14 @@
 }
 
 .modal {
+  .contact_form_wrap {
+    margin: 0;
+  }
+
+  .modal-content {
+    border: none;
+  }
+
   .modal-dialog {
     margin: 4rem auto 1.75rem;
 
@@ -72,20 +80,20 @@
 
   .close {
     position: absolute;
-    top: -54px;
+    top: -52px;
     right: 12px;
     display: block;
-    padding: 12px;
+    padding: 9px;
     border-radius: 50%;
-    background: $globalStrokeColor;
+    background: rgba($globalStrokeColor, .35);
     opacity: 1;
     cursor: pointer;
 
     span {
       position: relative;
       display: block;
-      width: 18px;
-      height: 18px;
+      width: 21px;
+      height: 21px;
 
       &::after {
         content: '';
@@ -110,6 +118,15 @@
         transform: translate(-50%, -50%) rotate(-45deg);
         transform-origin: center;
       }
+    }
+
+    &:hover {
+      opacity: 1;
+      background: rgba($globalFillColor, .2);
+    }
+
+    @include _media(md) {
+      right: -52px;
     }
   }
 }

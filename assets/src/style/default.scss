@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-@include heading-1();
+@include heading-2;
 }
 
 h1,
@@ -44,4 +44,8 @@ a {
   &.btn-lg {
     font-weight: 500;
   }
+}
+
+.main_site_title {
+  @include heading-1();
 }
