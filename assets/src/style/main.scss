@@ -45,6 +45,9 @@
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
 
+// Bootstrap table
+@import "../../../node_modules/bootstrap-table/dist/bootstrap-table.min.css";
+
 // Подключение своих SCSS файлов
 @import "../../../node_modules/floating-form-labels/scss/floating-form-labels";
 @import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";

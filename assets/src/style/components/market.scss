@@ -88,12 +88,12 @@
     }
 
     thead tr {
-      :first-child {
+      > *:first-child {
         border-top-left-radius: $globalBorderRadius;
-        text-align: center;
+        text-align: left;
       }
 
-      :last-child {
+      > *:last-child {
         border-top-right-radius: $globalBorderRadius;
         text-align: right;
       }
@@ -144,6 +144,43 @@
   .w-md-100 {
     @include _media(md) {
       width: 100% !important;
+    }
+  }
+}
+
+.pagination-detail {
+  display: none !important;
+}
+
+.bootstrap-table .fixed-table-container .table thead th .th-inner {
+  padding: .5rem .75rem;
+}
+
+.table_wrap {
+  margin-bottom: 3.5rem;
+}
+
+.fixed-table-pagination {
+  position: absolute;
+  float: unset !important;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@include _media(lg) {
+  .table_wrap {
+    margin-bottom: 0;
+  }
+
+  .fixed-table-pagination {
+    position: static;
+    transform: none;
+
+    > .pagination {
+      display: flex;
+      justify-content: center;
+      float: unset !important;
     }
   }
 }

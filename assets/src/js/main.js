@@ -24,5 +24,8 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
+// Импорт bootstrap table
+//= ../../../node_modules/bootstrap-table/dist/bootstrap-table.min.js
+
 // Импортируем другие js-файлы
 //= my.js
