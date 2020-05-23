@@ -1,11 +1,11 @@
-<header class="page_header">
+<header class="page_header js_sticky_header">
     <div class="row align-items-center h-100">
-        <div class="col-9 col-md-3">
+        <div class="col flex-grow-1 col-lg-3 order-1">
             <a href="/" class="logo">
                 <img class="img-fluid" src="./img/logo.svg" alt="">
             </a>
         </div>
-        <div class="col-6 d-none d-md-block h-100">
+        <div class="col-6 d-none d-lg-block h-100 order-3 order-lg-3">
             <nav class="header_nav">
                 <ul class="header_nav_menu h-100">
                     <li class="header_nav_item text-center h-100">
@@ -23,8 +23,8 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-3 d-flex align-items-center justify-content-end">
-            <div class="languages d-flex">
+        <div class="col col-lg-3 flex-grow-0 d-flex align-items-center justify-content-end order-2 order-lg-2">
+            <div class="languages">
                 <div class="item active">
                     <a href="#en">EN</a>
                 </div>
@@ -32,7 +32,15 @@
                     <a href="#ua">UA</a>
                 </div>
             </div>
-            <a href="javascript:void(0);" data-toggle="modal" data-target="#contact_us" class="btn btn-secondary btn-lg d-none d-md-inline-block text-nowrap">Contact us</a>
+            <div class="current_language d-block d-lg-none">
+                <div class="item">
+                    <div class="js_open_language">EN</div>
+                </div>
+            </div>
+            <div class="d-block d-lg-none btn_menu js_open_menu">
+                <img src="./img/menu.svg" alt="">
+            </div>
+            <a href="javascript:void(0);" data-toggle="modal" data-target="#contact_us" class="btn btn-secondary btn-lg d-none d-lg-inline-block text-nowrap btn-contact">Contact us</a>
         </div>
     </div>
 </header>
