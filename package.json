@@ -18,6 +18,7 @@
     "popper.js": "1.16.0"
   },
   "devDependencies": {
+    "bootstrap-table": "^1.16.0",
     "browser-sync": "~2.26.7",
     "del": "~5.1.0",
     "floating-form-labels": "^1.2.4",

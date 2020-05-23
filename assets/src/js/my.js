@@ -34,6 +34,9 @@ $(document).ready(function () {
 
 window.addEventListener('scroll', stickyHeader);
 document.querySelector('.js_open_language').addEventListener('click', toggleLanguage);
+
+$('.js_open_menu').on('click', toggleMobileMenu);
+
 $(document).click(function (e){
   var div = $(".languages, .js_open_language");
   if (!div.is(e.target)
@@ -45,20 +48,23 @@ $(document).click(function (e){
 function stickyHeader() {
   var offsetY = window.pageYOffset;
   var $header = document.querySelector('.js_sticky_header');
-
-  console.log(offsetY, $header);
+  var $btnContact = document.querySelector('.btn-contact');
 
   if (offsetY > 0) {
     $header.classList.add('sticky');
-    document.querySelector('.btn-contact').classList.remove('btn-secondary');
-    document.querySelector('.btn-contact').classList.add('btn-primary');
+    $btnContact.classList.remove('btn-secondary');
+    $btnContact.classList.add('btn-primary');
   } else {
     $header.classList.remove('sticky');
-    document.querySelector('.btn-contact').classList.add('btn-secondary');
-    document.querySelector('.btn-contact').classList.remove('btn-primary');
+    $btnContact.classList.add('btn-secondary');
+    $btnContact.classList.remove('btn-primary');
   }
 }
 
 function toggleLanguage() {
-  $('.languages').toggleClass('opened');
+  document.querySelector('.languages').classList.toggle('opened');
+}
+
+function toggleMobileMenu() {
+  document.querySelector('.page_header').classList.toggle('opened');
 }

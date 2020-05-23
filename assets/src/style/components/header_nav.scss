@@ -52,4 +52,13 @@
       }
     }
   }
+
+  &.mobile {
+    height: 100%;
+    margin-bottom: 0;
+
+    .header_nav_link {
+      padding: 24px 0;
+    }
+  }
 }
