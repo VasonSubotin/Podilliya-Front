@@ -45,6 +45,7 @@
       color: $globalStrokeColor;
       text-decoration: none;
       margin: .5rem 0;
+      word-break: break-word;
 
       &:hover,
       &:focus,

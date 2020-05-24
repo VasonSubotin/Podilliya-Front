@@ -4,7 +4,9 @@
 .header_block {
   width: 100%;
   padding-bottom: .5rem;
-  background: $bgGradient, url(../img/header_block_bg.jpg) no-repeat left bottom;
+  background-image: $homePageBackground;
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
   color: $globalFillColor;
 
@@ -12,14 +14,27 @@
     padding-bottom: 4.625rem;
   }
 
-  .page_offers &,
+  .page_market &,
   .page_contacts &,
-  .page_market & {
-    background: $bgGradient, url(../img/footer_block.jpg) no-repeat top;
+  .page_offers & {
     padding-bottom: 1.75rem;
 
     @include _media(md) {
       padding-bottom: 2.75rem;
     }
+  }
+
+  .page_market & {
+    background-image: $marketPageBackground;
+    background-position: top;
+  }
+
+  .page_contacts & {
+    background-image:$contactsPageBackground;
+  }
+
+  .page_offers & {
+    background-image: $offersPageBackground;
+    background-position: top;
   }
 }

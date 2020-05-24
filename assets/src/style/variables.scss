@@ -46,3 +46,9 @@ $modalCloseBg: mix(#504f4f, #d8d8d8, 85%);
 
 // Buttons
 $btnSellColor: #1c1b1b;
+
+// Background images
+$homePageBackground: $bgGradient, url(../img/backgrounds/home_bg.jpg);
+$marketPageBackground: $bgGradient, url(../img/backgrounds/market_bg.jpg);
+$contactsPageBackground: $bgGradient, url(../img/backgrounds/contacts_bg.jpg);
+$offersPageBackground: $bgGradient, url(../img/backgrounds/offers_bg.jpg);
