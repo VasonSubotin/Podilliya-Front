@@ -146,6 +146,15 @@
       width: 100% !important;
     }
   }
+
+  .page-link {
+    border-color: $border-color;
+    color: $globalStrokeColor;
+  }
+
+  .page-item.active .page-link {
+    color: $globalStrokeColor;
+  }
 }
 
 .pagination-detail {
