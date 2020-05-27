@@ -115,6 +115,11 @@
         :last-child {
           text-align: right;
         }
+
+        &:hover {
+          background: $rowHoverBackground;
+          cursor: pointer;
+        }
       }
     }
   }

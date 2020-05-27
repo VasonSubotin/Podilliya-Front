@@ -43,8 +43,7 @@
       transition: $transition;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $globalStrokeColor;
       text-decoration: none;
 
