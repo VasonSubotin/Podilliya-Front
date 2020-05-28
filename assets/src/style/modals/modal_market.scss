@@ -2,27 +2,8 @@
 @import "../mixins";
 
 .modal_market {
-  .contact_form_wrap {
-    border-radius: $globalBorderRadius $globalBorderRadius 0 0;
-
-    .form-control {
-      padding-left: 0;
-      padding-right: 0;
-      border: none;
-      border-bottom: 1px solid $lightGray;
-      border-radius: 0;
-      outline: none;
-      box-shadow: none;
-    }
-
-    .ffl-label {
-      opacity: .5;
-      padding-left: 0;
-    }
-  }
-
   .btn-more {
-    padding: .5rem 1.5rem;
+    padding: calc(.5rem - 1px) 1.5rem;
     line-height: 1.5rem;
     font-size: 1.125rem;
     font-weight: 500;
@@ -56,4 +37,34 @@
 
 .modal-content {
   border-radius: $globalBorderRadius;
+}
+
+.modal_market_data {
+  padding: 2rem 2.5rem .75rem;
+
+  h2 {
+    font-size: 34px;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+
+  .data_row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid $lightGray;
+  }
+
+  .data_label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: mix($globalFillColor, $globalStrokeColor, 50%);
+  }
+
+  .data_text {
+    margin-top: auto;
+    font-size: 18px;
+    line-height: 1.3;
+  }
 }

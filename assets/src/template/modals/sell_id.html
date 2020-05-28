@@ -4,12 +4,12 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"></span>
             </button>
-            <div class="contact_form_wrap">
-                <div class="row align-items-center">
+            <div class="modal_market_data">
+                <div class="row">
                     <div class="col">
-                        <h2 class="m-0">Sell</h2>
+                        <h2 class="m-0">Buy</h2>
                     </div>
-                    <div class="col d-flex justify-content-end">
+                    <div class="col flex-grow-0">
                         <button class="btn btn-more">More</button>
                     </div>
                 </div>
@@ -18,48 +18,50 @@
                         <div class="date">07 April 2020, 21:32</div>
                     </div>
                 </div>
-
-                <form action="/" method="post">
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="type[buy]">Type</label>
-                        <input id="type[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="volume[buy]">Объём</label>
-                        <input id="volume[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="price[buy]">Цена</label>
-                        <input id="price[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="tax[buy]">НДС</label>
-                        <input id="tax[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="delivery[buy]">Условия поставки:</label>
-                        <input id="delivery[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-group ffl-wrapper">
-                        <label class="ffl-label" for="adress[buy]">Место</label>
-                        <input id="adress[buy]" type="text" class="form-control form-control-lg">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group ffl-wrapper col-4">
-                            <label class="ffl-label" for="termine[buy]">Срок поставки</label>
-                            <input id="termine[buy]" type="text" class="form-control form-control-lg">
-                        </div>
-                        <div class="form-group ffl-wrapper col-4">
-                            <label class="ffl-label" for="month[buy]">Месяц поставки</label>
-                            <input id="month[buy]" type="text" class="form-control form-control-lg">
-                        </div>
-                        <div class="form-group ffl-wrapper col-4">
-                            <label class="ffl-label" for="expiration[buy]">Срок действия</label>
-                            <input id="expiration[buy]" type="text" class="form-control form-control-lg">
+                <div class="data_row">
+                    <div class="data_label">Type</div>
+                    <div class="data_text">Масло подсолнечное</div>
+                </div>
+                <div class="data_row">
+                    <div class="data_label">Объем</div>
+                    <div class="data_text">10000 (т.)</div>
+                </div>
+                <div class="data_row">
+                    <div class="data_label">НДС</div>
+                    <div class="data_text">Производитель</div>
+                </div>
+                <div class="data_row">
+                    <div class="data_label">Условия поставки:</div>
+                    <div class="data_text">EXW</div>
+                </div>
+                <div class="data_row">
+                    <div class="data_label">Объем</div>
+                    <div class="data_text">10000 (т.)</div>
+                </div>
+                <div class="data_row">
+                    <div class="data_label">Место</div>
+                    <div class="data_text">Херсонская обл., г. Херсон, Суворовский район</div>
+                </div>
+                <div class="row half_space">
+                    <div class="col d-flex">
+                        <div class="data_row">
+                            <div class="data_label">Срок поставки</div>
+                            <div class="data_text">-</div>
                         </div>
                     </div>
-                    <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
-                </form>
+                    <div class="col d-flex">
+                        <div class="data_row">
+                            <div class="data_label">Месяц поставки</div>
+                            <div class="data_text">Aпрель</div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="data_row">
+                            <div class="data_label">Срок действия</div>
+                            <div class="data_text">30</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal_footer">
                 <div class="row">

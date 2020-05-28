@@ -45,3 +45,15 @@ a {
 .main_site_title {
   @include heading-1();
 }
+
+.row {
+  &.half_space {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+
+    > .col {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  }
+}
