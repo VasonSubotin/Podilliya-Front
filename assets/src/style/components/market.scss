@@ -59,6 +59,14 @@
 }
 
 .market_table {
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+  .table_inner {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
   .table_wrap {
     overflow-x: auto;
   }
@@ -183,6 +191,16 @@
 }
 
 @include _media(lg) {
+  .market_table {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .table_inner {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .table_wrap {
     margin-bottom: 0;
   }

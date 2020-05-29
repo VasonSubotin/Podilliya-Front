@@ -65,21 +65,21 @@
       }
     }
   }
+}
 
-  .copyright,
-  .copyright_market {
-    line-height: 27px;
-  }
+.copyright,
+.copyright_market {
+  line-height: 27px;
+}
 
-  .copyright {
-    color: mix($globalFillColor, $globalPanelColor, 40%);
-  }
+.copyright {
+  color: mix($globalFillColor, $globalPanelColor, 40%);
+}
 
-  .copyright_market {
+.copyright_market {
+  color: mix($globalFillColor, $globalPanelColor, 60%);
+
+  a {
     color: mix($globalFillColor, $globalPanelColor, 60%);
-
-    a {
-      color: mix($globalFillColor, $globalPanelColor, 60%);
-    }
   }
 }
