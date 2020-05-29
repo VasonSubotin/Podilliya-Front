@@ -83,3 +83,12 @@
     color: mix($globalFillColor, $globalPanelColor, 60%);
   }
 }
+
+.row.copyright_row {
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.copyright_col {
+  padding: 0 .5rem !important;
+}
